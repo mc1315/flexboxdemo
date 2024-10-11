@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: rgb(37,64,58);
+    color: rgb(225,240,237);
+    font-family: 'Bricolage Grotesque', sans-serif;
+    padding: 20px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    flex-direction: row-reverse;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 125%;
+    color: rgb(225,240,237);
+    margin: 30px;
+} 
+
+a:hover {
+    color: rgb(108,184,166);
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 300%;
+    padding: 20px 15px;
+}
+
+h3 {
+    font-size: 175%;
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: 200%;
+    padding: 5px 20px;
+}
+
+h3:hover {
+    color: #4b8074;
+}
+
+main {
+    background-color: rgb(225,240,237);
+    color: #152421;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+p {
+    padding: 5px 10px;
+    line-height: 150%;
+    letter-spacing: 125%;
+    text-align: justify;
+}
+
+article, aside {
+    padding-bottom: 10px;
+}
+
+section {
+    flex-basis: 70%;
+}
+
+aside {
+    flex-basis: 29%;
+}
+
+
+@media (max-width: 700px) {
+    header, footer {
+        justify-content: center;
+        padding: 30px 0;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        flex-basis: 95%;
+    }
+
+    aside {
+        flex-basis: 95%;
+    }
+}
+
+@media (max-width: 400px) {
+    a {
+        display: flex;
+        justify-content: center;
+    }
+}
