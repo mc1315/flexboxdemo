@@ -66,7 +66,6 @@ main {
 p {
     padding: 5px 10px;
     line-height: 150%;
-    letter-spacing: 125%;
     text-align: justify;
 }
 
@@ -93,11 +92,7 @@ aside {
         flex-direction: column;
     }
 
-    section {
-        flex-basis: 95%;
-    }
-
-    aside {
+    section, aside {
         flex-basis: 95%;
     }
 }
